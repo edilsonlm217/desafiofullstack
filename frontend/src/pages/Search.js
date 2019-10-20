@@ -1,9 +1,20 @@
 import React from "react";
+import './Search.css'
 
 export default function Main() {
     return (
         <div className="container">
-            <label>Hello World</label>
+            <header>
+
+            </header>
+            
+            <main>
+
+            </main>
+            
+            <footer>
+
+            </footer>
         </div>
     );
 }
