@@ -75,5 +75,71 @@ footer {
     grid-column-start: 2;
     grid-column-end: 6;
     width: 100%;
-    background: green;
+    background: #FFF;
+}
+
+footer ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    margin-top: 50px;
+}
+
+footer ul li {
+    display: flex;
+    flex-direction: column;
+}
+
+footer ul li img {
+    width: 100%;
+    border-top: 1px solid rgb(148, 147, 147);
+    border-left: 1px solid rgb(148, 147, 147);
+    border-right: 1px solid rgb(148, 147, 147);
+    border-radius: 5px 5px 0 0;
+}
+
+footer ul li footer {
+    flex: 1;
+    background: #fff;
+    border-left: 1px solid rgb(148, 147, 147);
+    border-right: 1px solid rgb(148, 147, 147);
+    text-align: left;
+    border-radius: 0;    
+}
+
+footer ul li footer p {
+    font-size: 16px;
+    line-height: 20px;
+    color: #999;
+    padding: 15px;
+}
+
+footer ul li footer strong {
+    font-size: 16px;
+    color: #333;
+    padding: 15px;
+}
+
+footer ul li div {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    background: white;
+    border-bottom: 1px solid rgb(148, 147, 147);
+    border-left: 1px solid rgb(148, 147, 147);
+    border-right: 1px solid rgb(148, 147, 147);
+    max-width: auto;
+    justify-content: space-between;     
+}
+
+footer ul li div img {
+    margin: auto;
+    max-width: 24px;
+    max-height: 24px;
+    border: none; 
+}
+
+footer ul li div strong {
+    margin: auto;
 }

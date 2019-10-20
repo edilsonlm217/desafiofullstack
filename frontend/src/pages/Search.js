@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import api from '../services/api';
 
 import overflow from '../assets/overflow.png';
+import scoreIcon from '../assets/trophy.png';
+import acceptance from '../assets/acceptance.png';
 
 import './Search.css'
 
@@ -63,7 +65,23 @@ export default function Main() {
             </main>
             
             <footer>
-                
+                <ul>
+                    {users.map(user => (
+                        <li key={user.user_id}>
+                            <img src={user.profile_imageowner} alt="profileIMG"/>
+                            <footer>
+                                <strong>{user.owner}</strong>
+                                <p>{user.title}</p>
+                            </footer>
+                            <div>
+                                <img src={acceptance} alt="acceptance"/> 
+                                <strong>{user.accept_rate}%</strong>
+                                <img src={scoreIcon} alt="score"/>
+                                <strong>{user.score}pts</strong>
+                            </div>
+                        </li>
+                    ))}
+                </ul>
             </footer>
         </div>
     );
