@@ -1,9 +1,12 @@
 import React from "react";
+import { BrowserRouter, Route } from "react-router-dom";
+
+import Search from "./pages/Search";
 
 export default function Routes() {
     return (
-        <div>
-            <label>Hello World</label>
-        </div>
+        <BrowserRouter>
+            <Route path="/search" component={Search}/>
+        </BrowserRouter>
     );
 }
