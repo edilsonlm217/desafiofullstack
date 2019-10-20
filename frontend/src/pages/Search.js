@@ -26,6 +26,10 @@ export default function Main() {
 
         setUsers(response.data);
     }
+
+    function handleChange(e) {
+        setSort({selectSort:e.target.value})
+    }
     
     return (
         <div className="container">
@@ -49,7 +53,7 @@ export default function Main() {
                         onChange={event => setLimit(event.target.value)} 
                         placeholder="Número de resultados"/>
                     
-                    <select>
+                    <select onChange={handleChange} >
                         <option value="" selected disabled hidden>Ordenar como</option>
                         <option value="desc">Decrescenete</option>
                         <option value="asc">Crescente</option>
