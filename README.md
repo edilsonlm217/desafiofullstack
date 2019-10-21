@@ -1,3 +1,17 @@
+# O que é este projeto
+A aplicação que imaginei permite ao usuário pesquisar por todos os tópicos dentro do stackoverflow utilizando como paramentro uma tag de interesse. A apresentação desse conteúdo é realizada por meio de cards, onde são apresentadas as seguintes informações:
+	- O avatar do autor do tópico
+	- O título da pergunta
+	- O indice de aceitação do tópico
+	- ...e sua pontuação (score)
+  
+# Como esta aplicação foi construída
+Apesar do desafio ter solicitado a criação de uma API GraphQL, esta aplicação está rodando sobre uma API Rest que foi construída utilizando NodeJS. Conforme solicitado essa API trabalha como interface entre a API do StackOverflow e o frontend dessa aplicação.
+
+O frontend foi construido interiamente utilizando Javascript e utilizando como principal biblioteca o ReactJS.
+
+
+
 # Como rodar estre projeto.
 
 ## Instale Yarn
